@@ -12,26 +12,28 @@ namespace Lottospelet
 {
     public class Spel : ISpel
     {
-        private static string AnvändarNamn { get; set; }
-        private static string Lösenord { get; set; }
-        private static string KontoTyp { get; set; }
+        private static string? AnvändarNamn { get; set; }
+        private static string? Lösenord { get; set; }
+        private static string? KontoTyp { get; set; }
+        private string? nullable;
+        public Spel()
+        {
+            nullable = null;
+        }
 
         private static int Räknare = 0;
 
-        IexternalIDTjänst _iexternalIDTjänst;
+        IexternalIDTjänst? _iexternalIDTjänst;
 
         public Spel(IexternalIDTjänst iexternalIDTjänst)
         {
             _iexternalIDTjänst = iexternalIDTjänst;
         }
-        public Spel()
-        {
-
-        }
+       
 
         public bool LoggaIn(string namn, string lösenord)
         {
-            if (_iexternalIDTjänst.Authenticate(namn, lösenord))
+            if (_iexternalIDTjänst!.Authenticate(namn, lösenord))
                 return true;
             else return false;
         }

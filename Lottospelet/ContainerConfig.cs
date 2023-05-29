@@ -21,9 +21,7 @@ namespace Lottospelet
             builder.RegisterType<externalIDTjänst>().As<IexternalIDTjänst>();
             builder.RegisterType<ViTestarOmDettaFungerar>().As<IViTestarOmDettaFungerar>();
             builder.RegisterType<PersonProcessor>().As<IPersonProcessor>();
-            builder.RegisterType<SqliteDataAccess>().As<ISqliteDataAccess>();
-            builder.RegisterType<Lottorad>().As<ILottorad>();
-
+            builder.RegisterType<SqliteDataAccess>().As<ISqliteDataAccess>();            
 
             return builder.Build();
         }

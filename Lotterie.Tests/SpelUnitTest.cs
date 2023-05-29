@@ -16,7 +16,7 @@ namespace Lotterie.Tests
         {
             using (var mock = AutoMock.GetLoose()) //IDesposable
             {
-                mock.Mock<ISqlitDataAccess>()
+                mock.Mock<ISqliteDataAccess>()
                     .Setup(x => x.LoadData<IKonto>("select * from Person"))
                     .Returns(GetSamplePeople());
 
@@ -44,13 +44,13 @@ namespace Lotterie.Tests
 
                 string sql = "insert into Person (FirstName, LastName, Email, Age, LottoRad, KontoTyp) " +
                 "values (@FirstName, @LastName, @Email, @Age, @LottoRad, @KontoTyp)";
-                mock.Mock<ISqlitDataAccess>()
+                mock.Mock<ISqliteDataAccess>()
                     .Setup(x => x.SaveData(person, sql));
 
                 var cls = mock.Create<PersonProcessor>();
                 cls.SavePerson(person);
 
-                mock.Mock<ISqlitDataAccess>()
+                mock.Mock<ISqliteDataAccess>()
                     .Verify(x => x.SaveData(person, sql), Times.Exactly(1));
             }
         }

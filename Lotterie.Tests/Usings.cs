@@ -4,6 +4,7 @@ global using Lottospelet.DataBas;
 global using Lottospelet.Lotteriet;
 global using Lottospelet.Personprocess;
 global using Lottospelet.Spelarna;
+global using Lottospelet.Interfaces;
 global using Lottospelet;
 global using Moq;
 global using Autofac.Extras.Moq;

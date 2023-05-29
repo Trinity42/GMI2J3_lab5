@@ -22,11 +22,10 @@ namespace Lottospelet
 		public void Run()
 		{
 			IdentifyNextStep();
-		}
-		//_viTestar.EnMetod();
+		}		
 		private void IdentifyNextStep()
 		{
-			string selectedAction = "";
+			string? selectedAction = "";
 
 			do
 			{
@@ -69,7 +68,7 @@ namespace Lottospelet
 
 		private string GetActionChoice()
 		{
-			string output = "";
+			string? output = "";
 			Console.Clear();
 			Console.WriteLine(FiggleFonts.Standard.Render("Lotteriet"));
 			Console.WriteLine("Välkommen till spelet\n");
@@ -81,7 +80,7 @@ namespace Lottospelet
 			Console.Write("Vad väljer du: ");
 			output = Console.ReadLine();
 
-			return output;
+			return output!;
 		}
 	}
 }

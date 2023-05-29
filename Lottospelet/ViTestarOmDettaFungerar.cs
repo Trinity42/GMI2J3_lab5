@@ -30,17 +30,18 @@ namespace Lottospelet
 
 			Dictionary<int, int[]> LottoDict = Spel.SkapaLottorad();
 			Spel.SkrivUt(LottoDict);
-			Console.ReadLine();
+            Console.WriteLine("Tryck på retur för att fortsätta");
+            Console.ReadLine();
 			Lotteri lotteri = new Lotteri();
 			DateTime day = DateTime.Now;
 			string dag = day.ToString("dddd");
 			bool isTrue = false;
 			if (dag == "fredag") isTrue = true;
 			lotteri.RaderaLottoRader(LottoDict, isTrue);
-			Console.ReadLine();
-			Spel.SkrivUt(LottoDict);
+            Console.WriteLine("Tryck på retur för att fortsätta");
+            Console.ReadLine();
+            Console.WriteLine("Tryck på retur för att fortsätta");
+            Spel.SkrivUt(LottoDict);
 		}
-
-
 	}
 }

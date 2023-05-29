@@ -10,7 +10,7 @@ using System.Configuration;
 
 namespace Lottospelet.DataBas
 {
-	internal class SqliteDataAccess : ISqliteDataAccess
+	public class SqliteDataAccess : ISqliteDataAccess
 	{
 		public List<T> LoadData<T>(string sql)
 		{

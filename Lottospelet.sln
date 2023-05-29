@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lottospelet", "Lottospelet\Lottospelet.csproj", "{20386CFC-609F-489C-A77C-546D6CD35DBB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lottospelet", "Lottospelet\Lottospelet.csproj", "{20386CFC-609F-489C-A77C-546D6CD35DBB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lotterie.Tests", "Lotterie.Tests\Lotterie.Tests.csproj", "{D4540CC7-4DA3-463F-92D8-8EA4A4BB4D91}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{20386CFC-609F-489C-A77C-546D6CD35DBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20386CFC-609F-489C-A77C-546D6CD35DBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{20386CFC-609F-489C-A77C-546D6CD35DBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4540CC7-4DA3-463F-92D8-8EA4A4BB4D91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4540CC7-4DA3-463F-92D8-8EA4A4BB4D91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4540CC7-4DA3-463F-92D8-8EA4A4BB4D91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4540CC7-4DA3-463F-92D8-8EA4A4BB4D91}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
