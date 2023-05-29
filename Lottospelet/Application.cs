@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Lottospelet.Interfaces;
 
 namespace Lottospelet
 {
-	public class Application : IApplication
+    public class Application : IApplication
 	{
 		IViTestarOmDettaFungerar _viTestar;
 
