@@ -3,7 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Lottospelet.Betalningar;
 using Lottospelet.Interfaces;
+using Lottospelet.Lotteriet;
+using Lottospelet.Spelarna;
 
 namespace Lottospelet
 {

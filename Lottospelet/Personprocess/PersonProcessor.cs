@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Lottospelet.DataBas;
+using Lottospelet.Interfaces;
+using Lottospelet.Spelarna;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,14 +11,14 @@ namespace Lottospelet.Personprocess
 {
 	public class PersonProcessor : IPersonProcessor
 	{
-		ISqlitDataAccess _database;
+		ISqliteDataAccess _database;
 
-		public PersonProcessor(ISqlitDataAccess database)
+		public PersonProcessor(ISqliteDataAccess database)
 		{
 			_database = database;
 		}
-
-		public IKonto CreatePerson(string firstName, string lastName, string email, string kontotyp, int age, string lottorad)
+        
+        public IKonto CreatePerson(string firstName, string lastName, string email, string kontotyp, int age, string lottorad)
 		{
 			string fullname = $"{firstName} {lastName}";
 			IKonto output;

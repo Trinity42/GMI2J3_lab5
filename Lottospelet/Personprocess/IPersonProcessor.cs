@@ -1,4 +1,6 @@
-﻿namespace Lottospelet.Personprocess
+﻿using Lottospelet.Interfaces;
+
+namespace Lottospelet.Personprocess
 {
 	public interface IPersonProcessor
 	{

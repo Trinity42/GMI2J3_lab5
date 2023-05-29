@@ -1,4 +1,6 @@
-﻿using static System.Net.Mime.MediaTypeNames;
+﻿using Autofac;
+using Lottospelet.Interfaces;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace Lottospelet
 {

@@ -1,4 +1,6 @@
-﻿using Lottospelet.Interfaces;
+﻿using Lottospelet.Betalningar;
+using Lottospelet.Interfaces;
+using Lottospelet.Lotteriet;
 using System;
 using System.Collections.Generic;
 using System.Linq;

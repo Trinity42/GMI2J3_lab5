@@ -1,4 +1,6 @@
-﻿namespace Lottospelet.Interfaces
+﻿using Lottospelet.Betalningar;
+
+namespace Lottospelet.Interfaces
 {
     public interface ISpel
     {

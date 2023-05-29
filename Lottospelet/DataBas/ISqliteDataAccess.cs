@@ -1,6 +1,6 @@
 ﻿namespace Lottospelet.DataBas
 {
-	internal interface ISqliteDataAccess
+	public interface ISqliteDataAccess
 	{
 		List<T> LoadData<T>(string sql);
 		void SaveData<T>(T person, string sql);

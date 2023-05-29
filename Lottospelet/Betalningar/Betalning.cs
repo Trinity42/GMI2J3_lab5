@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lottospelet.Betalning
+namespace Lottospelet.Betalningar
 {
     public abstract class Betalning
     {
